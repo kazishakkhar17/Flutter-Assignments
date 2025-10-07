@@ -1,0 +1,49 @@
+name: flutter_application_2
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # --- State Management ---
+  flutter_riverpod: ^3.0.0
+  riverpod_annotation: ^3.0.0
+
+  # --- Navigation ---
+  go_router: ^14.0.0
+
+  # --- Local Storage ---
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.3.2
+
+  # --- UI / Optional ---
+  google_fonts: ^6.2.1
+  flutter_hooks: ^0.20.5
+
+  # --- JSON encode/decode ---
+  json_annotation: ^4.9.0
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # --- Code generation ---
+  build_runner: ^2.4.10
+  riverpod_generator: ^3.0.0-dev.11  # downgraded to avoid source_gen conflict
+  # hive_generator: ^2.0.1  # temporarily comment out to avoid conflicts
+  json_serializable: ^6.8.0
+  hive_generator: ^2.0.1
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
